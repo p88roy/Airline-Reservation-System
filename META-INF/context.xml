@@ -1,0 +1,12 @@
+<Context>
+<Resource name="jdbc/databaseName"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="100"
+		maxIdle="30"
+		maxWait="10000"
+		username="xxx"
+		password="xxx"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:xxxx/airlines?autoReconnect=true"/>
+</Context>
