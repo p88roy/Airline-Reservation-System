@@ -1,0 +1,56 @@
+<web-app>
+	<servlet>
+		<servlet-name>airline</servlet-name>
+		<servlet-class>AirlineControllerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>airline</servlet-name>
+		<url-pattern>/process</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>airlineRoute</servlet-name>
+		<servlet-class>AirlineRouteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>airlineRoute</servlet-name>
+		<url-pattern>/route</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>airlineQuery</servlet-name>
+		<servlet-class>AvailableAirlineQueryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>airlineQuery</servlet-name>
+		<url-pattern>/flight</url-pattern>
+	</servlet-mapping>	
+
+
+	<servlet>
+		<servlet-name>airlineBooking</servlet-name>
+		<servlet-class>AirwayBookingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>airlineBooking</servlet-name>
+		<url-pattern>/booking</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>bookingStatus</servlet-name>
+		<servlet-class>BookingStatusQueryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookingStatus</servlet-name>
+		<url-pattern>/status</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>AirwaysMenu.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
+
